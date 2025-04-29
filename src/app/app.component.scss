@@ -1,0 +1,124 @@
+.layout-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+ // background: linear-gradient(135deg, rgb(7, 16, 41), rgba(26, 17, 35, 0.9)); /* Gradient background */ 
+  background: linear-gradient(135deg, rgb(3, 8, 23), rgb(27, 32, 77, 0.9)); /* Gradient background */ 
+  color: white;
+}
+
+.topbar {
+  //position: sticky;
+  //top: 0;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-left: 40px;
+  z-index: 1000;
+}
+
+.topbar-left {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-title {
+  font-size: 28px;
+  font-weight: 250;
+  margin-bottom: 4px;
+}
+
+.resume-link {
+  font-size: 18px;
+  font-weight: 250;
+  background: linear-gradient(to right, #cd7b45, #c72ea3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon-align {
+  font-size: 18px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  margin-left: 250px; // Make space for sidenav
+  
+  @media (max-width: 768px) {
+    margin-left: 0; // No margin when sidebar hidden on mobile
+  }
+}
+
+/* Sidebar */
+.sidenav {
+  position: fixed; /* Fixed position for full height */
+  top: 60px; /* Position it below the topbar */
+  bottom: 0;
+  left: 0;
+  width: 250px;
+  color: rgb(104, 101, 101);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  z-index: 999;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
+
+  button {
+    background: none;
+    border: none;
+    color: rgba(226, 232, 240, 0.7);
+    text-align: left;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: 200;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+
+    &:hover,
+    &.active {
+      color: white; /* white highlight */
+      font-size: 17px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  font-weight: 200;
+  padding-right: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}

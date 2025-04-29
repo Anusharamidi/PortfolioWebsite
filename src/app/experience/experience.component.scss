@@ -1,0 +1,82 @@
+.main {
+  margin: 10px;
+  padding: 40px;
+  border-radius: 12px;
+  font-weight: 200;
+  
+  @media (max-width: 768px) {
+    padding: 20px; // Change on small screens
+  }
+}
+
+.experience-title {
+  font-size: 34px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-weight: 250;
+}
+
+.experience-card {
+  display: flex;
+  align-items: flex-start; /* 🔥 Keeps year and content aligned at the top */
+ // margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background-color: transparent;
+  padding: 20px;
+  //padding-right: 8rem;
+  transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent;
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Change on small screens
+  }
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover .title {
+    color: #00ffc3;
+  }
+}
+
+
+.experience-year {
+  min-width: 120px;
+  font-size: 18px;
+  font-weight: 200;
+  margin-right: 20px;
+  color: #ccc;
+}
+
+.experience-details {
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 200;
+}
+
+.title {
+  font-weight: 200;
+  font-size: 20px;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+.description {
+  color: white;
+  margin: 0.5rem 0 0;
+}
+.description-list {
+  padding-left: 1.5rem; /* Adjust padding to align bullet points */
+  margin-top: 0.5rem;  /* Space between title and bullet points */
+}
+
+.description-list li {
+  margin-bottom: 0.5rem; /* Space between items */
+  line-height: 1.6;  /* Better readability */
+  color: #ccc;  /* Set text color */
+  list-style-type: disc;  /* Set list style as bullets */
+}

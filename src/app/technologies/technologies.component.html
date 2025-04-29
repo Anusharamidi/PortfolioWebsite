@@ -1,0 +1,9 @@
+<div class="tech-section">
+    <h2 class="tech-heading">Technologies</h2>
+    <div class="tech-grid">
+      <div *ngFor="let tech of technologies" class="tech-logo-wrapper">
+        <img [src]="tech.logo" [alt]="tech.name" class="tech-logo" />
+      </div>
+    </div>
+</div>
+  

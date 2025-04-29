@@ -1,0 +1,36 @@
+.main {
+    margin: 10px;
+    border-radius: 12px;
+    font-weight: 250;
+    padding: 30px;
+
+    @media (max-width: 768px) {
+      padding: 20px; // Change on small screens
+    }
+  }
+  .contact{
+    font-weight: 200;
+    font-size: 34px;
+    // position: relative;
+    // display: inline-block;
+  }
+  .summary {
+    display: flex;
+    line-height: 1.6;
+    align-items: center;  /* Align text and icon in the center vertically */
+    font-weight: 300;     /* Same font weight for both elements */
+    font-size: 16px;      /* Same font size for both elements */
+  }
+  .content{
+    padding-left: 20px;
+  }
+  // .contact::after {
+  //   content: '';
+  //   position: absolute;
+  //   bottom: -2px;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 2px;
+  //   background-color: rgba(128, 128, 128, 0.3); /* sleek grey/transparent */
+  //   border-radius: 1px;
+  // }

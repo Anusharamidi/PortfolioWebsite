@@ -1,0 +1,95 @@
+.main {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    font-weight: 200;
+    padding: 40px;
+    @media (max-width: 768px) {
+      padding: 20px; // Change on small screens
+    }
+  }
+
+ .projects{
+    font-weight: 200;
+    font-size: 34px;
+  }
+  .main {
+    padding: 2rem;
+  }
+  
+  .projects {
+    margin-bottom: 1.5rem;
+  }
+
+  .project-card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid transparent;
+    font-weight: 200;
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05); // Light transparent overlay
+      border: 1px solid rgba(255, 255, 255, 0.15); // Soft border
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);   // Optional shadow
+    }
+  }
+  
+  .tags {
+    margin-top: 1rem;
+  }
+  
+  .tag {
+    display: inline-block;
+    background-color: #094e47;
+    color: rgb(238, 244, 244);
+    padding: 10px 12px;
+    margin: 4px 6px 0 0;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  .project-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column; // <-- Stack image and text on small screens
+      // align-items: center; // enter them nicely on small devices
+      // text-align: center; //  center text
+    }
+  
+  }
+  
+  .project-image {
+    width: 120px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    padding: 20px;
+    @media (max-width: 768px) {
+      width: 80%; // make it a bit bigger and centered
+      padding: 10px;
+    }
+  }
+  
+  .project-text {
+    flex: 1;
+    //padding-right: 8rem;
+  }
+  .title {
+    font-weight: 200;
+    font-size: 20px;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  .custom-divider {
+    width: 75%;
+   // margin: 0 auto; /* centers the divider */
+  }
+  .custom-divider mat-divider {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.1); /* Almost transparent grey */
+    height: 0.1px;
+  }
+  

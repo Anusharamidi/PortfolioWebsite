@@ -1,0 +1,49 @@
+<div class="layout-wrapper">
+  <div class="topbar">
+    <div class="topbar-left">Portfolio</div>
+      <div class="topbar-right">
+        <a class="resume-link" href="/assets/resume.pdf" target="_blank">
+          Resume <mat-icon>open_in_new</mat-icon>
+        </a>
+      </div>
+  </div>
+  
+
+  <div class="content-wrapper">
+    <div class="sidenav">
+      <button [ngClass]="{ active: currentTab === 'home' }" (click)="scrollToSection('home')">
+        <!-- <mat-icon>home</mat-icon>  -->
+        Home
+      </button>
+      <button [ngClass]="{ active: currentTab === 'about' }" (click)="scrollToSection('about')">
+        <!-- <mat-icon>person</mat-icon>  -->
+        About
+      </button>
+      <button [ngClass]="{ active: currentTab === 'tech' }" (click)="scrollToSection('tech')">
+        <!-- <mat-icon>apps</mat-icon>  -->
+        Technologies
+      </button>
+      <button [ngClass]="{ active: currentTab === 'experience' }" (click)="scrollToSection('experience')">
+        <!-- <mat-icon>logo_dev</mat-icon>  -->
+        Experience
+      </button>
+      <button [ngClass]="{ active: currentTab === 'projects' }" (click)="scrollToSection('projects')">
+        <!-- <mat-icon>work</mat-icon>  -->
+        Projects
+      </button>
+      <button [ngClass]="{ active: currentTab === 'contact' }" (click)="scrollToSection('contact')">
+        <!-- <mat-icon>mail</mat-icon>  -->
+        Contact
+      </button>
+    </div>
+
+    <div class="main-content">
+      <app-home id="home"></app-home>
+      <app-about id="about"></app-about>
+      <app-technologies id="tech"></app-technologies>
+      <app-experience id="experience"></app-experience>
+      <app-projects id="projects"></app-projects>
+      <app-contact id="contact"></app-contact>
+    </div>
+  </div>
+</div>
