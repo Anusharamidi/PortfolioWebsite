@@ -15,17 +15,17 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Portfolio Website',
-      description: ['Designed a sleek and responsive portfolio website showcasing my projects, skills, and professional journey. ',
-          'Built with Angular and styled for a clean, modern user experience.'],
+      description: 'Designed a sleek and responsive portfolio website showcasing my projects, skills, and professional journey. Built with Angular and styled for a clean, modern user experience.',
       image: 'assets/projects/portfolio-image.png',
       tags: ['HTML', 'CSS', 'Angular', 'Typescript']
     },
     {
-      title: 'Fighting Online Abuse using Machine Learning',
-      description: 'Built a multi-label classification model to detect various toxic behaviors (e.g., threats, identity-based attacks) in online platforms',
-      image: 'assets/projects/mlproject.png',
-      tags: ['Python', 'Deep Learning', 'Machine Learning']
+      title: 'Habit Tracker Web App',
+      description: 'Developed a full-stack web application to help users create, track, and manage habits with daily/weekly logs. Includes features for adding, editing, and deleting habits, tracking habit completion, and filtering logs by habit.',
+      image: 'assets/projects/habittracker.jpeg',
+      tags: ['Full-Stack', 'ASP.NET Core', 'SQL Server', 'Entity Framework','Angular', 'TypeScript', 'REST API']
     }
+
   ];
   
 }
